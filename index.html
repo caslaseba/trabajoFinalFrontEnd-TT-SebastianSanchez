@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Game Store</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <img src="imagenes/logo.PNG" alt="FamilyTitulo" />
+      <nav>
+        <ul>
+          <li><a href="#nuestrosProductos">Productos</a></li>
+          <li><a href="#dondeEstamos">¿Dónde estamos?</a></li>
+          <li><a href="#nuestrasRedes">Nuestras redes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="introBox">
+        <img
+          id="familyGame"
+          src="imagenes/familyGame.PNG"
+          alt="Imagen Family Game"
+        />
+
+        <p class="pFamily">
+          El Family Game, también conocido como Family Computer o Famicom, fue
+          una consola de videojuegos lanzada por Nintendo en Japón en 1983. Se
+          convirtió en un fenómeno mundial y marcó un hito en la industria del
+          gaming, especialmente en Latinoamérica, donde los clones de la consola
+          fueron extremadamente populares.
+        </p>
+
+        <video id="introVideo" controls>
+          <source src="videos/comercial1983.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </section>
+
+      <section id="nuestrosProductos">
+        <h2 class="tituloSeccion">PRODUCTOS</h2>
+        <div id="productos"></div>
+      </section>
+
+      <section id="resumenCarrito">
+        <h2 class="tituloSeccion">Resumen del carrito</h2>
+        <div id="listaCarrito"></div>
+        <p id="infoTotal">Total a pagar: $0</p>
+        <p id="infoCantidad">Productos en carrito: 0</p>
+        <a href="/paginas/compraTerminada.html" target="_blank">
+        <button>Terminar la compra</button>
+        </a>
+      </section>
+
+      <section>
+        <a id="reseñas"></a>
+        <h2 id="tituloRese">RESEÑAS</h2>
+        <div class="resenias">
+          <div class="card">
+            <img src="resenias/cara1.png" alt="reseña 1" />
+            <div class="card-content">
+              <span class="card-nombre">Laura Esquivel</span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">17/05/2025</span>
+              <p>Excelente variedad de juegos!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="resenias/cara2.png" alt="reseña 2" />
+            <div class="card-content">
+              <span class="card-nombre">Marcos Gonzalez</span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">14/07/2023</span>
+              <p>Muy buena atencion!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="resenias/cara3.png" alt="reseña 3" />
+            <div class="card-content">
+              <span class="card-nombre">Mariana Alvarez </span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">21/10/2023</span>
+              <p>El producto es lo que esperaba!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="resenias/cara4.png" alt="reseña 4" />
+            <div class="card-content">
+              <span class="card-nombre">Ariel Cardozo</span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">25/12/2024</span>
+              <p>Funciona perfecto!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="resenias/cara5.png" alt="reseña 5" />
+            <div class="card-content">
+              <span class="card-nombre">Gabriela Rivas</span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">30/04/2024</span>
+              <p>No tuve ningun problema!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="resenias/cara6.png" alt="reseña 6" />
+            <div class="card-content">
+              <span class="card-nombre">Javier Travsky</span><br />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><br />
+              <span class="card-fecha">21/02/2023</span>
+              <p>Compre muchos cartuchos, excelente todo!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulario">
+        <div>
+          <h2 class="tituloForm">Formulario de contacto</h2>
+
+          <form
+            class="formContacto"
+            action="https://formspree.io/f/mrbqwvba"
+            method="post"
+          >
+            <div>
+              <label for="nombre"></label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingrese su nombre y apellido"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingrese su e-mail"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="mensaje"></label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje aquí"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+
+  <footer>
+    <section id="secUbicacion">
+      <a id="dondeEstamos"></a>
+      <h2 id="tituloUbi">Dónde estamos</h2>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13122.769302381546!2d-58.31465955!3d-34.68771395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1747092302838!5m2!1ses-419!2sar"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+
+    <section id="nuestrasRedes">
+      <h2 id="tituloRedes">Nuestras redes</h2>
+      <nav>
+        <ul id="redes">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.x.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i> Twitter
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <p>&copy; By GalloGames!</p>
+  </footer>
+</html>

@@ -1,0 +1,497 @@
+/* que el scroll sea suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* selector universal*/
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+main {
+  background-color: #0b0221;
+  padding-top: 10rem; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9a2b32;
+  padding: 1rem 0;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* inicio */
+#inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(114, 91, 86);
+  padding-bottom: 2rem;
+}
+
+/* Imagen y párrafo de Family Game */
+#introBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: rgb(114, 91, 86);
+}
+
+#familyGame {
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.pFamily {
+  width: 300px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#introVideo {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Productos en grilla y responsive */
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #222;
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  background-color: #000;
+  color: #1d07e6;
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+}
+
+.tituloSeccion {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem 0;
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  background-color: #e67e22;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  letter-spacing: 3px;
+}
+
+.producto h2 {
+  font-size: 14px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 10px;
+}
+#nuestrosProductos h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #e67e22;
+  letter-spacing: 2px;
+}
+
+/* Botones */
+button {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+/* Carrito */
+#carrito {
+  margin-top: 20px;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#resumenCarrito {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+#listaCarrito .itemCarrito {
+  background-color: #333;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.itemCarrito p {
+  margin: 0.5rem 0;
+}
+
+.itemCarrito button {
+  margin: 0 5px;
+  background-color: #e67e22;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.itemCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.botonesCantidad button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botonesCantidad button:last-child {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.itemCarrito button:hover {
+  background-color: #d35400;
+}
+
+#infoTotal,
+#infoCantidad {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* RESEÑAS */
+#reseñas {
+  scroll-margin-top: 8rem;
+}
+
+#tituloRese {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.resenias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 2rem;
+}
+
+.card {
+  background-color: #222;
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.card img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.card-nombre {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card-fecha {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card i.fa-star {
+  color: #ffd700;
+  margin: 0 2px;
+}
+
+/* FORMULARIO DE CONTACTO */
+#formulario {
+  background-color: #1a1a1a;
+  padding: 2rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.tituloForm {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.formContacto {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formContacto input,
+.formContacto textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  font-family: inherit;
+}
+
+.formContacto input::placeholder,
+.formContacto textarea::placeholder {
+  color: #bbb;
+}
+
+.formContacto button {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formContacto button:hover {
+  background-color: #d35400;
+}
+
+#secUbicacion {
+  background-color: #0b0221;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#tituloUbi {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#map {
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+#nuestrasRedes {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+#tituloRedes {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#redes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 20px;
+}
+
+#redes li {
+  font-size: 1rem;
+}
+
+#redes a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#redes a:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+#redes i {
+  font-size: 1.2rem;
+}
+
+/*Estilos de las paginas*/
+
+.mainNes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.imgNes {
+  width: 30rem;
+}
+
+.videoYtextoNes {
+  height: 100%;
+  justify-items: center;
+}
+
+.videoNes {
+  width: 500px;
+  align-items: center;
+}
+
+.textoNes {
+  flex: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 50rem;
+}
+
+.textoNes h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fad505;
+}
+
+.textoNes ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.textoNes li {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.textoNes p {
+  font-size: 1.7rem;
+}
