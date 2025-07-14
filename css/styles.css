@@ -454,17 +454,23 @@ button:hover {
 }
 
 .imgNes {
-  width: 30rem;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+
 }
 
 .videoYtextoNes {
-  height: 100%;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .videoNes {
-  width: 500px;
-  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto
 }
 
 .textoNes {
@@ -494,4 +500,23 @@ button:hover {
 
 .textoNes p {
   font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .videoYtextoNes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoNes h2 {
+    font-size: 2rem;
+  }
+
+  .textoNes li {
+    font-size: 1.5rem;
+  }
+
+  .textoNes p {
+    font-size: 1.2rem;
+  }
 }
